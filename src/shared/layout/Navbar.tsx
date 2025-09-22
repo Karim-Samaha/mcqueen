@@ -10,7 +10,7 @@ import AppLogo from "../ui/AppLogo";
 const Navbar: React.FC = () => {
   const {theme, toggleTheme} = useTheme();
   return (
-    <nav className="w-[100%] max-w-[1380px] h-[66px] bg-[red] mx-auto flex items-center justify-between px-8 pt-8 py-4 bg-white dark:bg-gray-900">
+    <nav className="w-[100%] max-w-[1380px] h-[66px] mx-auto flex items-center justify-between px-8 pt-8 py-4">
       <div className="flex items-center">
         <AppLogo />
       </div>
