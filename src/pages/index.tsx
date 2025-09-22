@@ -1,6 +1,6 @@
 import HeroSection from "@/shared/layout/Main";
 import MainLayout from "@/shared/layout/MainLayout";
-import JobSearch from "@/shared/features/job-search";
+import JobSearch from "@/features/job-search";
 
 export default function Home() {
   return (
