@@ -18,7 +18,7 @@ const HeroSection = ({ children }: { children: ReactNode }) => {
       </p>
       <MotionWrapper>
         {children}
-        <div className="mx-auto max-w-[1380px] relative">
+        <div className="mx-auto max-w-[1380px] relative mt-22">
           <div className="bg-transparent dark:bg-gray-900 absolute w-full h-full opacity-[.4]"></div>
           <CityLandscape className="w-[100%]" />
         </div>

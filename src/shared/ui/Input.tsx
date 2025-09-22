@@ -19,7 +19,7 @@ function cn(...classes: (string | undefined | false)[]) {
 
 // Variant styles
 const variantClasses: Record<string, string> = {
-  outline: 'border-transparent hover:border-primary-300 focus-within:border-primary-500 bg-white dark:bg-gray-800',
+  outline: 'border-gray-200 hover:border-primary-300 focus-within:border-primary-500 bg-white dark:bg-gray-800',
   fill: 'border-gray-200 bg-[#FAF9FC] hover:border-primary-300 focus-within:border-primary-500',
 };
 

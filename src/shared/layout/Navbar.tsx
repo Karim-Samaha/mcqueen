@@ -15,12 +15,12 @@ const Navbar: React.FC = () => {
         <AppLogo />
       </div>
 
-      <ul className="hidden lg:flex items-center gap-10 text-gray-600 w-[55%] min-w-[570px]">
-        <li className="cursor-pointer text-[#646E7D] hover:text-black">Featured Jobs</li>
-        <li className="cursor-pointer text-[#646E7D] hover:text-black">Salary Trend</li>
-        <li className="cursor-pointer text-[#646E7D] hover:text-black">Where To Fly</li>
-        <li className="cursor-pointer text-[#646E7D] hover:text-black">Covid Policy</li>
-        <li className="cursor-pointer text-[#646E7D] hover:text-black">Blog</li>
+      <ul className="hidden lg:flex items-center justify-evenly gap-10 text-gray-600 w-[65%] min-w-[570px]">
+        <li className="cursor-pointer text-[#646E7D] font-[600] text-[15px] hover:text-black">Featured Jobs</li>
+        <li className="cursor-pointer text-[#646E7D] font-[600] text-[15px] hover:text-black">Salary Trend</li>
+        <li className="cursor-pointer text-[#646E7D] font-[600] text-[15px] hover:text-black">Where To Fly</li>
+        <li className="cursor-pointer text-[#646E7D] font-[600] text-[15px] hover:text-black">Covid Policy</li>
+        <li className="cursor-pointer text-[#646E7D] font-[600] text-[15px] hover:text-black">Blog</li>
       </ul>
 
       <div className="hidden lg:flex items-center gap-6">

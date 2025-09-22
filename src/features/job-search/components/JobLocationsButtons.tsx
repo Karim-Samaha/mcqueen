@@ -15,7 +15,12 @@ const JobLocationsButtons: React.FC<JobLocationsButtonsProps> = ({
         "Jobs in New York",
         "Jobs in Florida",
       ].map((job, idx) => (
-        <Button key={idx} variant="secondary" onClick={() => onClick(job)}>
+        <Button
+          key={idx}
+          variant="secondary"
+          onClick={() => onClick(job)}
+          className="rounded-[50px] min-w-[45%] sm:min-w-[auto]"
+        >
           {job}
         </Button>
       ))}

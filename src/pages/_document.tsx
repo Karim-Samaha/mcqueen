@@ -5,21 +5,14 @@ export default function Document() {
   return (
     <Html>
       <Head />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+      />
+
       <body>
-        {/* <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                try {
-                  const stored = localStorage.getItem('theme');
-                  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                  const theme = stored || (prefersDark ? 'dark' : 'light');
-                  if (theme === 'dark') document.documentElement.classList.add('dark');
-                } catch(e){}
-              })();
-            `,
-          }}
-        /> */}
         <Main />
         <NextScript />
       </body>

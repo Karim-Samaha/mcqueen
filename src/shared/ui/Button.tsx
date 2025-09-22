@@ -25,12 +25,12 @@ interface ButtonProps
 }
 
 const variantClasses: Record<ButtonVariant, string> = {
-  primary: "bg-[#2C7BF4] text-white hover:bg-primary-1000/90 disabled:bg-primary-200 ",
+  primary: "bg-[#2C7BF4] text-white hover:bg-primary-1000/90 disabled:bg-primary-200 font-bold ",
   primaryOutline: "bg-transparent border border-[#2C7BF4] text-primary-900 hover:opacity-80",
   primaryLink: "bg-transparent text-[#2C7BF4] hover:opacity-80 disabled:text-primary-200",
   primaryPale:
-    "bg-[#E7F0FF] hover:bg-border text-[#646E7D] disabled:border-primary-50",
-  secondary: "bg-transparent border border-gray-200 text-gray-600 text-primary-900 hover:opacity-80",
+    "bg-[#E7F0FF] hover:bg-border text-[#646E7D] disabled:border-primary-50 font-[600]",
+  secondary: "bg-[#F9FBFF] dark:bg-transparent border border-[#DDE0F0] text-gray-600 text-primary-900 hover:opacity-80 font-[500]",
   secondaryPale: "",
   warning: "",
   danger: "",
@@ -62,7 +62,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <Comp
         ref={ref}
         className={cn(
-          "inline-flex rounded-[12px] cursor-pointer items-center justify-center gap-2 text-sm font-medium transition-colors focus:outline-none focus:ring-1 disabled:pointer-events-none disabled:opacity-50",
+          "inline-flex rounded-[12px] cursor-pointer items-center justify-center gap-2 text-sm transition-colors focus:outline-none focus:ring-1 disabled:pointer-events-none disabled:opacity-50",
           variantClasses[variant],
           sizeClasses[size],
           className
